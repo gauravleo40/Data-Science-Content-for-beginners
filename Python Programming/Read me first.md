@@ -1,5 +1,5 @@
 
-## Welcome, Future Pythonista 👋
+## Welcome, Python Enthusiasts 👋
 
 As someone who has guided many beginners on their Python journey, let me first say — you’re not alone if you’ve ever felt overwhelmed. Learning Python can be exciting, but also confusing if the **end goal isn't clear** or if the **learning path feels scattered**. That’s exactly why I created this space — to simplify your learning experience and guide you step-by-step with purpose and clarity.
 
