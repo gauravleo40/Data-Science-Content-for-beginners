@@ -29,8 +29,15 @@ Ensure you install the **Python extension** in your IDE for syntax support and c
 
 ---
 
-## 3. Writing Your First Code
+# Python Programming Topics for Beginners
 
-Open your platform and try this:
-```python
-print("Hello, Python!")
+1. Accessing Online Platforms to Write Python Code  
+2. Accessing Offline Platform (IDE) via Download and Setup  
+3. Writing Your First Code  
+4. Understanding the Bare Basics – Variables, Syntax, Keywords, etc.  
+5. Moving to Python's Built-in Data Structure: Lists  
+6. Understanding Loops in Python  
+7. Moving to Python's Built-in Data Structure: Tuples  
+8. Moving to Python's Built-in Data Structure: Dictionaries  
+9. Exploring Python's Sets and Strings  
+10. More Topics Coming Soon...
