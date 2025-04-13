@@ -1,10 +1,10 @@
-# Python Programming Topics for Beginners
+# Python Programming for Beginners
 
 This guide is designed to help absolute beginners get started with Python programming, whether online or offline. Each section below introduces fundamental concepts and tools you’ll need as you begin your Python journey.
 
 ---
 
-# Python Programming Topics for Beginners
+# Key Topics in Python Programming for beginners
 
 1. Accessing Online Platforms to Write Python Code  
 2. Accessing Offline Platform (IDE) via Download and Setup  
