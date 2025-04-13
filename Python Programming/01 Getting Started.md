@@ -1,4 +1,3 @@
----
 
 ## 1. Accessing Online Platforms to Write Python Code
 
