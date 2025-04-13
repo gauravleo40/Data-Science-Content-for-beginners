@@ -6,7 +6,7 @@ As someone who has guided many beginners on their Python journey, let me first s
 Before you dive in, here are a few thoughts I’d love to share with you:
 
 - **Python is powerful, but it’s easy to get lost** when there’s no roadmap. This space aims to give you a *clear direction*.
-- **There’s no shortage of resources online**, but many feel too theoretical or disconnected from real-world applications. That can make it hard to stay motivated — I’ve seen it happen time and again.
+- **There’s no shortage of resources online**, but many of them feel too theoretical or disconnected from real-world applications. That can make it hard to stay motivated — I’ve seen it happen time and again.
 - **This GitHub page is a work in progress**, and content will be added gradually. Stay patient — good things take time.
 - Most importantly, **don’t give up if things don’t click right away**. Learning to code is like learning a new language — and every line you write brings you one step closer.
 
