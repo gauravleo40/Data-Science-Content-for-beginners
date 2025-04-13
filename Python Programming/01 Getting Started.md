@@ -35,7 +35,7 @@ So take a deep breath, leave the fear behind, and let’s begin!
 ### 🚀 How to Get Started:
 1. Visit 👉 [https://colab.research.google.com/](https://colab.research.google.com/)
 2. If prompted, sign in with your Google account.
-3. Click on the **"New Notebook"** button (usually found at the bottom-right corner or top-left corner).
+3. Click on the **"New Notebook"** button (usually found at the bottom-right or left corner).
 4. A new page will open with a code cell ready to go!
 
 ### ✨ Why Colab is a Great Starting Point:
@@ -51,7 +51,7 @@ Another excellent way to explore Python online is through **Jupyter.org**.
 
 ### 🚀 How to Try It:
 1. Visit 👉 [https://jupyter.org/try](https://jupyter.org/try)
-2. Click on the **“Try JupyterLab”** option (you may also try "Classic Notebook").
+2. Click on the **“Try Notebook”** option (you may also try "Jupyter Lab").
 3. Wait a few seconds — a free, temporary notebook will open.
 4. Click on **File > New > Notebook**, and select Python (usually Python 3).
 
@@ -59,7 +59,7 @@ That’s it! You’re now in a live Python notebook ready to write your first co
 
 ---
 
-## 👨‍💻 Let’s Write and Run Your First Python Code!
+## 👨‍💻 Let’s write and Run your First Python Code!
 
 Copy the following code and paste it in **either Google Colab or Jupyter Notebook**:
 
@@ -75,36 +75,96 @@ Here’s how you can execute your first Python code on both platforms:
 
 **🔹 On Google Colab**
 - Click inside the code cell
-- Press `Shift + Enter` on your keyboard
+- Press `CTRL + Enter` on your keyboard
 
 **🔹 On Jupyter Notebook (via jupyter.org)**
 - Click the code cell to select it
-- Press `Shift + Enter` to run it
+- Press `CTRL + Enter` to run it
 
-💡 After you press `Shift + Enter`, the cell will execute, and you’ll see the output just below the code. Try entering your name when prompted!
+💡 After you press `CTRL + Enter`, the cell will execute, and a prompt (a dialogue box) will appear asking for your input - .i.e., Your Name. Once you write your name and hit `Enter` you’ll see the code output just below the code. 
+
+Again, the intention here is not to fully understand what is going on with the code, rather the idea is to get an initial first-hand experience of code running in an Online Platform !
 
 ---
 
-
----
 
 ### 🧭 What’s Next?
 
 Now that you've taken your **first step into Python programming** by writing and running code online, here’s what you can do next:
 
-- 🔁 **Repeat the process** a few times — try changing the `print()` message or add another line of code.
-- 🤹 **Experiment freely** — don't worry about breaking things. Mistakes are part of the learning process.
-- ✅ **Build a small routine** — spend 10–15 minutes a day exploring and trying out Python basics.
-- 💬 **Ask questions and seek clarity** — if something doesn’t make sense, note it down. We'll cover it in the upcoming lessons.
+## 🧪 Try these practical examples
 
-And once you're feeling a bit more confident with writing code online, you’ll be ready for the next big step:  
-👉 **Setting up Python on your own computer (offline)** — and yes, we’ll guide you through it, step by step.
+These examples show how you can use Python to solve simple, everyday tasks. They also give you a chance to interact with Python by providing inputs, which is great for learning.
 
 ---
 
-> 💡 *The only way to learn coding is to code. Keep exploring, stay curious, and don’t let the fear of mistakes slow you down.*
+### ✅ Example 01: Find the Perimeter of a Rectangle
 
-> ✨ *Every expert was once a beginner who ran their first line of code. You're already on the path — keep going!*
+```python
+# This example calculates the perimeter of a rectangle.
+# The user is asked to input the length and width of the rectangle.
 
+length = float(input("Enter the length of the rectangle: "))  # Taking length input from the user
+width = float(input("Enter the width of the rectangle: "))    # Taking width input from the user
 
+# Calculate the perimeter
+perimeter = 2 * (length + width)
 
+# Print the result
+print("The perimeter of the rectangle is:", perimeter)
+```
+
+### ✅ Example 02: Print the Table of a Number
+
+```python
+# This example prints the multiplication table of a number.
+# The user is asked to input the number for which they want the table.
+
+number = int(input("Enter a number to print its multiplication table: "))
+
+# Print the multiplication table
+print("Multiplication Table for", number)
+for i in range(1, 11):  # Loop from 1 to 10
+    print(number, "x", i, "=", number * i)
+```
+
+### ✅ Example 03: Check if a Number is Prime
+
+```python
+
+# This example checks if a given number is a prime number.
+# The user is asked to input the number they want to check.
+
+number = int(input("Enter a number to check if it's prime: "))
+
+# Prime number check
+if number > 1:
+    for i in range(2, number):
+        if number % i == 0:
+            print(number, "is not a prime number.")
+            break
+    else:
+        print(number, "is a prime number.")
+else:
+    print(number, "is not a prime number.")
+
+```
+---
+
+### 🔁 **Keep experimenting**  
+The more you play around with code, the more comfortable you’ll become. Try changing parts of the code, experiment with different inputs, and don’t be afraid to make mistakes. Every time you tweak something, you’re learning.
+
+### 🤹 **Don’t be afraid to make mistakes**  
+Mistakes are a vital part of the process! They’re how you grow and understand the logic behind the code. Keep going, and with each mistake, you’ll come out stronger and more knowledgeable.
+
+### 🌟 **What’s next?**  
+Once you're comfortable with writing and testing code online, it’s time to take the next big step:  
+👉 **Setting up Python on your own computer** (offline). This is where an IDE (Integrated Development Environment) comes into play — something we'll guide you through in the next lesson.
+
+---
+
+> 💡 *The journey to mastering coding is all about practice. Keep coding, exploring, and learning from your mistakes.*
+
+> ✨ *Remember, every expert started exactly where you are now. The first line of code you write is the start of your journey — keep moving forward!*  
+
+---
