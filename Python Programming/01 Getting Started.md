@@ -1,4 +1,4 @@
-# Where to write codes - Accessing an Online Platform/Application/Tool/IDE
+# Where to write codes - Accessing an Online Platform
 
 ---
 
