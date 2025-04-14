@@ -103,7 +103,7 @@ Go with **Anaconda** if you’re just starting out. You’ll spend less time set
    - Optionally, choose 'Register Anaconda as my default Python' if you want Anaconda to be the system's default Python.
 9. Ready to Install: Review your choices, and if everything looks good, click 'Install'.
 
-## Step 4: Complete the Installation
+## Step 3: Complete the Installation
 1. The installation process will begin. This might take a few minutes.
 2. Once the progress bar reaches the end, click 'Next'.
 3. Click 'Finish' to close the installer.
@@ -135,6 +135,6 @@ Go with **Anaconda** if you’re just starting out. You’ll spend less time set
 
 > 🌱 *Your offline coding environment is where real projects begin. If you’ve made it this far, you're already on the path to becoming a capable programmer.*
 
-> 🔧 *Next up: Let’s explore how to use the IDEs you just installed — and build something exciting!*
+> 🔧 *Next up: Let’s learn some of the Python Programming fundamentals, that will allow you to write your own codes !*
 
 ---
