@@ -1,6 +1,6 @@
 # 🧮 Getting started with simple arithmetic programs in Python
 
-### 👋 Welcome, Beginner!
+### 👋 Welcome !
 
 As someone just starting out with Python, you might be wondering:
 
