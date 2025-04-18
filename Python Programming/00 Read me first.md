@@ -17,21 +17,21 @@ I’m here to help you learn Python not just as a programming language, but as a
 # Key Topics in Python Programming for beginners
 
 1. Where to write Python codes ?
-   - Online Platforms to Write Python Code  
-   - Offline Platforms (IDEs) via Download and Setup  
-4. Writing Your First Code (and also making sense of it)
-5. Bare Basics first – Variables, Syntax, Keywords, etc.  
-6. Python's Built-in Data Structure: Why are they needed ?
+   - Online platforms to write Python code  
+   - Offline platforms (IDEs) via download and setup  
+4. Writing your first code examples (and also making sense of them)
+5. Bare basics first – Variables, Syntax, Keywords, etc.  
+6. Python's built-in data structure: Why are they needed ?
    - Lists
    - Tuples
    - Dictionaries
    - Sets
    - Sets
-8. Understanding Loops in Python
-   - For Loops
-   - While Loops  
+8. Understanding loops in Python
+   - For loops
+   - While loops  
 9. List and Dictionary Comprehensions
-10. User Defined Functions
-11. Object Oriented Programming Basics
+10. User defined functions
+11. Object oriented programming basics
 12. ....more topics to be added later....
 
