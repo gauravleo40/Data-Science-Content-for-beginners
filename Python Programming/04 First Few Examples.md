@@ -4,7 +4,7 @@
 
 As someone just starting out with Python, you might be wondering:
 
-> “What can I actually do with Python now that I’ve learned a few basics?”
+> “What can I actually do with Python now that I’ve just begun my journey?”
 
 That’s a very valid question — and one that every new learner has asked at some point.  
 Often, what holds beginners back is not the complexity of programming, but the **lack of immediate, meaningful application**.
@@ -30,16 +30,7 @@ And the moment you run your own code and see it working — that’s when you’
 
 Each example below covers a **tiny real-world task** — something you’d usually do with pen-and-paper or a calculator. But now, **you’ll solve it using Python.**
 
-Along the way, you’ll practice:
-- Taking user input
-- Using arithmetic operators like `+`, `-`, `*`, `/`
-- Writing clean, understandable code
-- Printing clear results for users
-
----
----
-
-## 🧮 Example 1: Area of a Rectangle
+### 🧮 Example 1: Area of a Rectangle
 
 ```python
 # We want to find the area of a rectangle
@@ -54,7 +45,7 @@ print("The area of the rectangle is:", area, "square meters")
 
 ---
 
-## 💰 Example 2: Simple Interest Calculation
+### 💰 Example 2: Simple Interest Calculation
 
 ```python
 # We want to find the simple interest on a bank deposit
@@ -71,25 +62,25 @@ print("The simple interest is:", simple_interest)
 
 ---
 
-## 📊 Example 3: Average of Four Numbers
+### 📊 Example 3: Average of Four Numbers
 
 ```python
-# Let's calculate the average of four marks: 72, 85, 90, 78
+# Let's calculate the average of four subjects scores: 72, 85, 90, 78
 
-mark1 = 72
-mark2 = 85
-mark3 = 90
-mark4 = 78
+Science = 72
+English = 85
+Mathematics = 90
+Socialscience = 78
 
-total = mark1 + mark2 + mark3 + mark4
-average = total / 4
+total = Science + English + Mathematics + Socialscience
+average_score = total / 4
 
-print("The average mark is:", average)
+print("The average score is:", average_score)
 ```
 
 ---
 
-## 📅 Example 4: Calculate Age from Birth Year
+### 📅 Example 4: Calculate Age from Birth Year
 
 ```python
 # Suppose the current year is 2025 and a person was born in 2000
@@ -104,7 +95,7 @@ print("The person's age is:", age, "years")
 
 ---
 
-## 🛒 Example 5: Total Cost of Grocery Items
+### 🛒 Example 5: Total Cost of Grocery Items
 
 ```python
 # We bought 3 apples (Rs. 20 each), 2 loaves of bread (Rs. 30 each), and 1 bottle of milk (Rs. 50)
@@ -124,7 +115,7 @@ print("The total cost of groceries is Rs.", total_cost)
 
 Let’s pause for a moment.
 
-You just went through a bunch of small programs — calculating interest, averaging marks, working out grocery bills… and on the surface, they might seem basic. But underneath, something important has already started.
+You just went through a bunch of small programs — calculating interest, averaging marks, working out grocery bills. On the surface, they might seem basic, but underneath, something important has already started.
 
 You’ve taken your first steps into programming — and whether you realized it or not, you’ve already used some of its core building blocks:
 
@@ -172,3 +163,68 @@ So keep going. Explore, edit, break things, fix them again — that’s how lear
 You’re doing just fine.
 
 We’ll pick it up from here next — and unpack everything you’ve touched so far, one concept at a time.
+
+---
+---
+---
+
+## 🧩 Try it yourself: Five simple programming exercises
+
+Here are five small programming tasks to help you practice what you've just learned.  
+- Each one involves working with variables, basic arithmetic operations, and using the `print()` function to display the result.  
+- Use the provided values (or experiment with your own) and validate the final output that your code generates
+
+---
+
+### 1. Calculate the perimeter of a rectangle  
+```python
+# Write a program to calculate the perimeter of a rectangle with a length of 10 and a width of 6. 
+# Use the formula: perimeter = 2 * (length + width), and display the result as: 
+# "The perimeter of the rectangle is: 32 units".
+
+# ---- write your code here ----
+
+```
+---
+
+### 2. Convert temperature from Celsius to Fahrenheit
+```python
+# Write a program that converts 37 degrees Celsius to Fahrenheit using the formula: 
+# Fahrenheit = (Celsius × 9/5) + 32. Display the result as: 
+# "37 degrees Celsius is equal to 98.6 degrees Fahrenheit".
+
+# ---- write your code here ----
+```
+---
+
+### 3. Calculate total marks, percentage, and print a summary
+```python
+# Write a program that calculates the total marks and percentage for five subjects 
+# with scores 80, 76, 91, 85, and 88. The total is the sum of all marks, 
+# and the percentage is calculated as (total / 500) * 100. 
+# Display both total and percentage clearly.
+
+# ---- write your code here ----
+```
+---
+
+### 4. Calculate overall average speed
+```python
+# A vehicle travels 40 km in 1 hour, 60 km in 1.5 hours, and 30 km in 0.5 hours. 
+# Write a program to calculate the total distance, total time, and the overall average speed 
+# using: average_speed = total_distance / total_time. 
+# Display all three values in a readable format.
+
+# ---- write your code here ----
+```
+---
+
+### 5. Compute CGPA across two semesters
+```python
+# A student scored a GPA of 7.8 in Semester 1 with 24 credits, and a GPA of 8.4 in Semester 2 with 28 credits. 
+# Write a program to compute the CGPA across both semesters using the formula: 
+# CGPA = (GPA1 × credits1 + GPA2 × credits2) / (credits1 + credits2). 
+# Display the final CGPA as: "The overall CGPA is: 8.13".
+
+# ---- write your code here ----
+```
