@@ -73,7 +73,7 @@ In Python, **the right-hand side (RHS) is always evaluated first**, and the resu
 
 ## Some Important Points about Assignment
 
-### 1. No need to define variable types beforehand
+### 1.1 No need to define variable types beforehand
 
 Unlike some other languages, in Python you don't have to say "this will be an integer" or "this will be text".
 
@@ -91,7 +91,7 @@ This makes writing code faster and easier — you just focus on **what** you wan
 
 ---
 
-### 2. Longer expressions on the RHS
+### 1.2 Longer expressions on the RHS
 
 As programs grow, you'll see slightly more complex calculations on the right-hand side.
 
@@ -113,7 +113,7 @@ Whenever you see a longer RHS, **mentally break it down into steps**:
 
 ---
 
-### 3. Variables can update themselves
+### 1.3 Variables can update themselves
 
 This is an important idea, and it will appear very often later.
 
@@ -159,40 +159,120 @@ In short:
 
 ---
 
+# 2. Operators in Python
 
-## 2. Operators
+In the earlier examples, you saw that we were using symbols like `+`, `-`, `*`, `/` to perform simple calculations.  
+These are called **operators**.
 
-An **operator** is a symbol that tells Python to perform some operation between two or more values.
+Operators allow you to perform operations on values or variables. In Python, there are **different types of operators** depending on what kind of operation you want to perform.
 
-The examples you saw earlier mostly used **arithmetic operators**:
+Let's explore them one by one!
 
-| Operator | Meaning        | Example               | Result  |
-|:--------:|:---------------|:----------------------|:-------:|
-| `+`      | Addition        | `3 + 2`                | `5`     |
-| `-`      | Subtraction     | `5 - 2`                | `3`     |
-| `*`      | Multiplication  | `4 * 3`                | `12`    |
-| `/`      | Division        | `10 / 2`               | `5.0`   |
+---
 
-### A bigger picture: Other Types of Operators
+## 2.1 Arithmetic Operators
 
-Python has many other types of operators too, which you will explore gradually.
+These are the operators that help you perform basic math operations.
 
-Here’s a small preview:
+Here’s a quick overview:
 
-| Type of Operator | Purpose                             | Example |
-|:-----------------|:------------------------------------|:--------|
-| Assignment        | Store a value in a variable         | `a = 5` |
-| Arithmetic        | Perform math operations             | `b + c` |
-| Comparison        | Compare two values (true/false)     | `x > y` |
-| Logical           | Combine multiple conditions         | `x > 5 and y < 10` |
+| Operator | Meaning                      | Example            | Result |
+|:--------:|:------------------------------|:------------------:|:------:|
+| `+`      | Addition                      | `5 + 3`             | `8`    |
+| `-`      | Subtraction                   | `5 - 3`             | `2`    |
+| `*`      | Multiplication                 | `5 * 3`             | `15`   |
+| `/`      | Division (float result)        | `5 / 2`             | `2.5`  |
+| `//`     | Floor Division (quotient only)  | `5 // 2`            | `2`    |
+| `%`      | Modulo (remainder)              | `5 % 2`             | `1`    |
+| `**`     | Exponent (power)                | `2 ** 3`            | `8`    |
 
-**Practical examples**:
+> ✨ **Note:**  
+> - `/` always gives a decimal result.  
+> - `//` gives only the whole number part, dropping the decimal part.  
+> - `%` gives the remainder left after division.
+
+---
+
+## 2.2 Comparison Operators
+
+These operators are used when you want to **compare** two values.
+
+They always give you a result of either **True** or **False** (this is super important for conditions later on).
+
+Here’s the table:
+
+| Operator | Meaning                        | Example          | Result  |
+|:--------:|:-------------------------------|:----------------:|:-------:|
+| `==`     | Equal to                        | `5 == 5`         | `True`  |
+| `!=`     | Not equal to                    | `5 != 3`         | `True`  |
+| `>`      | Greater than                    | `5 > 3`          | `True`  |
+| `<`      | Less than                       | `5 < 3`          | `False` |
+| `>=`     | Greater than or equal to         | `5 >= 5`         | `True`  |
+| `<=`     | Less than or equal to            | `5 <= 6`         | `True`  |
+
+> ✨ **Note:**  
+> - `=` (single equal) is for assignment.  
+> - `==` (double equal) is for checking equality, i.e. if the Left hand side (LHS) is exactly equal to the Right hand side (RHS)
+
+---
+
+## 2.3 A Quick Reality Check
+
+Let’s say you are writing a program to calculate someone's final marks and check if they have passed.
+
+You could use arithmetic operators to calculate total marks, and comparison operators to check if the marks are more than the pass mark!
+
+Example:
+
 ```python
-is_adult = age > 18          # Comparison operator (>)
-can_vote = is_adult and citizen  # Logical operator (and)
+total_marks = 400
+pass_marks = 350
+
+# Check if passed
+has_passed = total_marks >= pass_marks
+print(has_passed)    # Output: True
 ```
 
-For now, just remember: **operators help us create expressions** that do some meaningful work!
+---
+
+## 2.4 Operator Precedence (Order of Operations)
+
+When you have a bigger expression with many operators, Python **follows an order** to decide **which operation happens first**.
+
+The basic rules (same as math):
+
+1. **Parentheses** `()` → Always done first
+2. **Exponents** `**`
+3. **Multiplication `*`, Division `/`, Floor Division `//`, Modulo `%`** → Left to right
+4. **Addition `+` and Subtraction `-`** → Left to right
+5. **Comparisons** (`==`, `!=`, `>`, `<`, etc.) happen after the arithmetic is fully evaluated.
+
+---
+
+### Example:
+
+```python
+result = 5 + 3 * 2 ** 2 - (8 // 3)
+print(result)
+```
+
+Let's break it down:
+
+- First, exponent: `2 ** 2 = 4`
+- Then, multiplication: `3 * 4 = 12`
+- Then, floor division inside parentheses: `8 // 3 = 2`
+- Now substitute back: `5 + 12 - 2`
+- Addition: `5 + 12 = 17`
+- Subtraction: `17 - 2 = 15`
+
+Final output:
+
+```
+15
+```
+
+> 📌 **Tip:**  
+> Whenever you are unsure about order, use parentheses `()` to control it yourself!
 
 ---
 
