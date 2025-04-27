@@ -422,8 +422,6 @@ But have you ever wondered **how** it actually works? Behind the scenes, Python 
 - Later, you'll even learn to **create your own functions** —  making your programs **even more powerful and customized!** 🚀
 
 ---
----
----
 
 # Summary
 
@@ -433,3 +431,7 @@ In every program you wrote earlier, three powerful ideas were working together:
 - **Functions**: to carry out specific actions (like printing results).
 
 The better you understand these basics, the easier and more fun programming becomes!
+
+---
+---
+---
