@@ -24,7 +24,7 @@ While we do that, you'll start picking up the **core ideas of Python programming
 
 ---
 
-## What is a Variable? What is a Value?
+## 1.1 What is a Variable? What is a Value?
 
 In Python, a **variable** is simply a name you give to a piece of information.  
 The **value** is the actual data you are storing.
@@ -45,7 +45,7 @@ The variable name helps you **refer back to that value later** — without hardc
 
 ---
 
-## Explanation of the Assignment operation (=)
+## 1.2 Explanation of the Assignment operation with `=` operator
 
 The `=` symbol is called the **assignment operator** in Python.
 
@@ -71,9 +71,9 @@ In Python, **the right-hand side (RHS) is always evaluated first**, and the resu
 
 ---
 
-## Some Important Points about Assignment
+## 1.3 Some Important Points about Assignment
 
-### 1.1 No need to define variable types beforehand
+### 1.3.1 No need to define variable types beforehand
 
 Unlike some other languages, in Python you don't have to say "this will be an integer" or "this will be text".
 
@@ -91,7 +91,7 @@ This makes writing code faster and easier — you just focus on **what** you wan
 
 ---
 
-### 1.2 Longer expressions on the RHS
+### 1.3.2 Longer expressions on the RHS
 
 As programs grow, you'll see slightly more complex calculations on the right-hand side.
 
@@ -113,7 +113,7 @@ Whenever you see a longer RHS, **mentally break it down into steps**:
 
 ---
 
-### 1.3 Variables can update themselves
+### 1.3.3 Variables can update themselves
 
 This is an important idea, and it will appear very often later.
 
@@ -143,7 +143,7 @@ This kind of updating helps programs track things like totals, scores, balances,
 
 ---
 
-## Why are Variables so Important?
+## 1.4 Why are Variables so Important?
 
 Imagine if you had to **hardcode** every single number directly inside every formula!  
 It would become a mess very quickly — and making changes would be super painful.
