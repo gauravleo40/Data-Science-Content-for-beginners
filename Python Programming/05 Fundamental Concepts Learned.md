@@ -71,7 +71,7 @@ In Python, **the right-hand side (RHS) is always evaluated first**, and the resu
 
 ---
 
-## 1.3 Some Important Points about Assignment
+## 1.3 Some important points about assignment
 
 ### 1.3.1 No need to define variable types beforehand
 
@@ -143,7 +143,7 @@ This kind of updating helps programs track things like totals, scores, balances,
 
 ---
 
-## 1.4 Why are Variables so Important?
+## 1.4 Why are variables so important?
 
 Imagine if you had to **hardcode** every single number directly inside every formula!  
 It would become a mess very quickly — and making changes would be super painful.
@@ -216,7 +216,7 @@ Here’s the table:
 
 ---
 
-## 2.3 A Quick Reality Check
+## 2.3 A quick reality check
 
 Let’s say you are writing a program to calculate someone's final marks and check if they have passed.
 
@@ -235,7 +235,7 @@ print(has_passed)    # Output: True
 
 ---
 
-## 2.4 Operator Precedence (Order of Operations)
+## 2.4 Operator precedence (order of operations)
 
 When you have a bigger expression with many operators, Python **follows an order** to decide **which operation happens first**.
 
