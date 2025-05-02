@@ -389,11 +389,16 @@ But have you ever wondered **how** it actually works? Behind the scenes, Python 
 
 - Imagine you need to **calculate the area of multiple rectangles**.
 - Without functions, you would **retype the formula again and again**.
-- If you had a function like:  
+- If you had functions like below:  
   ```python
-  area = calculate_rectangle_area(10, 6)
+  calculate_rectangle_area(length, width)
   ```
-  you could **reuse it** anytime — just by changing the inputs.
+  or
+  ```python
+  calculate_compound_interest(principal, rate, time, n)
+  ```
+
+  you could **reuse them** anytime — just by changing the inputs.
 
 ✅ **Benefits**:
 - Code becomes **efficient** and **cleaner**.
