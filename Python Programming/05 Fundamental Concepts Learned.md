@@ -225,8 +225,11 @@ You could use arithmetic operators to calculate total marks, and comparison oper
 Example:
 
 ```python
-total_marks = 400
-pass_marks = 350
+subject_01 = 90
+subject_02 = 95
+subject_03 = 85
+total_marks = subject_01 + subject_02 + subject_03
+pass_marks = 200
 
 # Check if passed
 has_passed = total_marks >= pass_marks
