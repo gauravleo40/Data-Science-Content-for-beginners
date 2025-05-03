@@ -146,11 +146,9 @@ Here’s how it looks:
 monthly_expenses = 12000, 15000, 10000, 11000, 13000
 ````
 
-This is different from what you’ve done earlier where a variable held just **one** value.
+This is different from what you’ve done earlier where a variable held just **one** value. Now, the same variable is holding **five** values at once — like a bundle or a **Data Container**
 
-Now, the same variable is holding **five** values at once — like a bundle.
-
-Python recognizes this collection as something called a **tuple** — which is just one kind of *data structure*. Don’t worry about that term for now — just focus on what it allows you to do.
+Python recognizes this collection as something called a **tuple** — which is just one kind of *data structure*. Don’t worry about that term **Tuple** for now — just focus on what it allows you to do.
 
 ---
 
@@ -160,7 +158,7 @@ This new way of storing data makes many operations simpler and less error-prone.
 
 ---
 
-#### ➕ Total Monthly Expense (clean and simple)
+#### ➕ Total monthly expense
 
 ```python
 total = sum(monthly_expenses)
@@ -173,14 +171,18 @@ print("Total Expense:", total)
 Total Expense: 61000
 ```
 
-Compare this with the earlier method, where we had to manually add five different variables. This is clearly more convenient.
+Compare this with the earlier approach, where we had to manually add Five different variables. This is clearly more convenient.
 
 ---
 
-#### 📊 Average Monthly Expense
+#### 📊 Average monthly expense
 
 ```python
 average = sum(monthly_expenses) / 5
+
+# or
+
+average = sum(monthly_expenses) / len(monthly_expenses)
 print("Average Monthly Expense:", average)
 ```
 
@@ -194,7 +196,7 @@ You can now do this without repeating all the variable names or rewriting long e
 
 ---
 
-#### 🔍 Maximum and Minimum Monthly Expense
+#### 🔍 Maximum and Minimum expenses
 
 ```python
 print("Highest Expense in a Month:", max(monthly_expenses))
