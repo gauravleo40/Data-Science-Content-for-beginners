@@ -1,4 +1,7 @@
-# 01. Variables recap
+# Moving beyond variables: A gentle step into Data Structures
+
+---
+## 01. Variables recap
 
 By now, you've already learned how **variables** are an important concept in Python. They let us store values, use them again and again, and make our code easier to work with.
 
@@ -32,13 +35,13 @@ print(N, 'x 10 =', N * 10)
 - Third a computation on the variable `N`, i.e., `N * ...`
 
 ---
-Here, it might have take us some time to write all these code lines, but this is just a one-time effort. By using the variable `N` we have saved the time and effort for generating a Table for some other value of `N`, let's say 12
+Here, it might have taken us some time to write all these code lines, but this is just a one-time effort. By using the variable `N` in these multiple print statements, we have saved the time and effort for generating a Table for some other value of `N`, let's say 12
 
 ```python
 N = 12  # That’s it! The rest of the code stays the same.
 ```
 
-⚠️ **Now imagine NOT using a variable at all.** You would have to write the number `7` in all 10 lines. And if you later want to print the table of `12`, you’d have to change every line by hand. That’s a lot of extra work whenever the value of `N` needs to be changed. Also it’s easy to make mistakes while making these multiple changes eveytime
+⚠️ **Now imagine NOT using a variable at all.** First you would have to write the number `7` in all 10 print lines. And if you later want to print the table of `12`, you’d have to change every line by hand. That’s a lot of extra work whenever the value of `N` needs to be changed. Also it’s easy to make mistakes while making these multiple changes eveytime
 
 > 💡 **Note from a more experienced programmer:** A better way to write this code is by using `for` or `while` loops in Python — something you’ll learn very soon. But even this small example shows how one variable can make your life easier.
 
@@ -46,7 +49,7 @@ N = 12  # That’s it! The rest of the code stays the same.
 ---
 
 
-# 02. Variables have their limits
+## 02. Variables have their limits
 
 You’ve seen how variables make your code flexible. But what if you have to work with **many related values** — like monthly expenses, exam scores, or daily temperatures?
 
@@ -54,9 +57,9 @@ Let’s walk through an everyday situation and see where variables start to stru
 
 ---
 
-## 📌 Real-world example: Tracking monthly expenses
+## 📌 Real-world example: Analyzing monthly expenses
 
-Say you’re trying to keep track of how much you spent in the first 5 months of the year.
+Say you’re trying to keep track of how much you spent in the first 5 months of a an Year.
 
 As a beginner you might approach it like this:
 
@@ -80,10 +83,10 @@ print("Total expenses so far:", total_expense)
 Yes, this works. But let's pause and think — what happens if you now want to:
 
 * Add June, July, and more months?
-* Calculate the average monthly expense?
+* Calculate the average monthly expense, or find the maximum or minimum expense in these Five months
 * Compare each month’s expense to a budget limit?
 
-Suddenly, your code becomes longer and harder to manage.
+Suddenly, these seemingly simple operations start feeling complicated and difficult to manage with the Five variables we have declared above.
 
 ---
 
@@ -91,9 +94,9 @@ Suddenly, your code becomes longer and harder to manage.
 
 Let’s look at the issues one by one:
 
-* **Too many variables**: You're forced to create separate variables for each month. That’s okay for 5, but terrible for 12 or more.
+* **Too many variables**: You created separate variables for each month. That’s okay for 5, but terrible for 12 or more.
 
-* **Tedious calculations**: Each time you want to calculate a total or average, you have to write all the variable names one by one.
+* **Tedious calculations**: Each time you want to calculate a total or an average, you have to write all the variable names one by one.
 
   Imagine doing this:
 
@@ -103,9 +106,9 @@ Let’s look at the issues one by one:
 
   ...and later needing to change it when June is added.
 
-* **Naming overload**: Coming up with variable names for each data point takes time. Also, you need to be creative in thinking of meaningful names for each variable
+* **Naming overload**: Coming up with variable names for each data point takes time. Also, you need to be creative in thinking of meaningful names for these variables to make sense out of them
 
-* **Scalability drops**: Your logic becomes harder to extend and maintain. What if you wanted to store last year’s expenses too?
+* **Scalability drops**: This approach of creating individual variables for monthly expenses becomes harder to extend and maintain. What if you wanted to store last year’s expenses too - you would need to re-look at your variable naming strategy!
 
 ---
 
@@ -128,7 +131,7 @@ And that’s exactly what **data structures** in Python allow you to do.
 ---
 ---
 
-# 03. A better way to store multiple values — First step toward data structures
+## 03. A better way to store multiple values — First step toward data structures
 
 In the last example, you saw how storing monthly expenses using separate variables became time-consuming and hard to manage.
 
@@ -138,7 +141,7 @@ Let’s now try a different style — something that helps us group all those va
 
 ### 🌱 A smarter way to store multiple values
 
-If we list all the monthly expense values separated by commas and assign them to a single variable, Python stores them as a **collection** of multiple data points.
+If we declare all the monthly expense values separated by commas and assign them to a single variable, Python stores them as a **collection** of multiple data points.
 
 Here’s how it looks:
 
@@ -148,7 +151,7 @@ monthly_expenses = 12000, 15000, 10000, 11000, 13000
 
 This is different from what you’ve done earlier where a variable held just **one** value. Now, the same variable is holding **five** values at once — like a bundle or a **Data Container**
 
-Python recognizes this collection as something called a **tuple** — which is just one kind of *data structure*. Don’t worry about that term **Tuple** for now — just focus on what it allows you to do.
+Python recognizes this collection (.i.e., the variable `monthly_expenses`) as something called a **tuple** — which is just one kind of *data structure*. Don’t worry about that term **Tuple** for now — just focus on what it allows you to do.
 
 ---
 
