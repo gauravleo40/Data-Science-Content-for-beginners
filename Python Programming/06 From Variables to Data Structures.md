@@ -1,11 +1,10 @@
 # Moving beyond variables: A gentle step into Data Structures
-
----
-## 01. Variables recap
-
 By now, you've already learned how **variables** are an important concept in Python. They let us store values, use them again and again, and make our code easier to work with.
 
 But as you move ahead, you’ll see that while variables are very useful, they are not enough in every situation — especially when you have to handle a lot of related information at once.
+
+---
+## 01. Variables recap
 
 Before we go into that, let’s take one more real-life example to understand how variables can really help us.
 
