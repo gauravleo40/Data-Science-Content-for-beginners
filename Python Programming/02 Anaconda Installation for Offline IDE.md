@@ -1,10 +1,10 @@
 
 
-# 🖥️ Setting Up Python on Your System (Offline)
+# 🖥️ Setting up Python on your system (offline)
 
 ---
 
-## 🚀 Why Use an Offline Platform?
+## 🚀 Why use an offline platform?
 
 Once you've built confidence writing basic code online, it's time to move one step closer to how real-world Python programming works — **by setting up Python on your own computer**.
 
@@ -23,12 +23,12 @@ In fact, almost all experienced programmers use **offline IDEs (Integrated Devel
 
 This is the most direct way to install Python on your computer.
 
-### 🧰 What You Get:
+### 🧰 What you get:
 - The **Python interpreter** (the engine that runs your code)
 - **IDLE**, a very basic editor to write Python scripts
 - Essential **libraries and modules** to get started
 
-### 🪜 Steps to Install:
+### 🪜 Steps to install:
 1. Go to [https://www.python.org](https://www.python.org)
 2. Hover over the **Downloads** tab
 3. It will auto-detect your operating system (Windows, macOS, Linux) — click the suggested version
@@ -57,7 +57,7 @@ Anaconda is a **Python distribution** that comes bundled with:
 - Dozens of **pre-installed packages** used in data science, automation, and more
 - Tools to manage different coding environments easily
 
-### 🧭 Variants Within the Anaconda Setup
+### 🧭 Variants within the Anaconda setup
 
 As you explore the Anaconda website, you might notice that there are two different installation options available — **Anaconda** and **Miniconda**.
 
@@ -77,12 +77,12 @@ You can always explore Miniconda later when you're more confident and want more 
 | Includes      | Python + 100+ pre-installed tools | Only Python and package tool  |
 | Best For      | Beginners and data learners       | Advanced users with space concerns |
 
-🟢 **Our Recommendation:**  
+🟢 **Our recommendation:**  
 Go with **Anaconda** if you’re just starting out. You’ll spend less time setting things up and more time learning Python.
 
 ---
 
-### 🪜 Steps to Install Anaconda:
+### 🪜 Steps to install Anaconda:
 
 ## Step 1: Download the Installer file (.exe file)
 1. Visit [https://www.anaconda.com](https://www.anaconda.com)
@@ -115,7 +115,7 @@ Go with **Anaconda** if you’re just starting out. You’ll spend less time set
 
 ---
 
-## 📦 What Makes Anaconda Ideal for Beginners?
+## 📦 What makes Anaconda ideal for beginners?
 
 - 👶 Easy to use with a clean web interface (Jupyter Notebook)
 - 📊 Comes with tools used in real-world jobs (Pandas, NumPy, Matplotlib, etc.)
