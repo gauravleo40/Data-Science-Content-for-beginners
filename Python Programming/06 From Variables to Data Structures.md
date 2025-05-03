@@ -1,16 +1,19 @@
 # Moving beyond variables: A gentle step into Data Structures
 By now, you've already learned how **variables** are an important concept in Python. They let us store values, use them again and again, and make our code easier to work with.
 
-But as you move ahead, you’ll see that while variables are very useful, they are not enough in every situation — especially when you have to handle a lot of related information at once.
+But as you move ahead, you’ll see that while simple variables are very useful, they are not enough in every situation — especially when you have to handle a lot of related information at once.
+
+Let's begin !
+
 
 ---
 ## 01. Variables recap
 
-Before we go into that, let’s take one more real-life example to understand how variables can really help us.
+First, let’s take one more real-life example to understand how variables can really help us.
 
 ---
 
-## 📌 Example: printing a multiplication table
+### 📌 Example: printing a multiplication table
 
 Let’s say you want to print the multiplication table of a number, like 7. Here’s one way to write that using a variable:
 
@@ -56,7 +59,7 @@ Let’s walk through an everyday situation and see where variables start to stru
 
 ---
 
-## 📌 Real-world example: Analyzing monthly expenses
+### 📌 Real-world example: Analyzing monthly expenses
 
 Say you’re trying to keep track of how much you spent in the first 5 months of a an Year.
 
@@ -89,7 +92,7 @@ Suddenly, these seemingly simple operations start feeling complicated and diffic
 
 ---
 
-## ⚠️ What makes this a problem?
+### ⚠️ What makes this a problem?
 
 Let’s look at the issues one by one:
 
@@ -117,7 +120,7 @@ Let’s look at the issues one by one:
 
 ---
 
-## 🚧 A better way is coming…
+### 🚧 A better way is coming…
 
 What you really want is:
 
@@ -160,7 +163,7 @@ This new way of storing data makes many operations simpler and less error-prone.
 
 ---
 
-#### ➕ Total monthly expense
+#### 💰 Total monthly expense
 
 ```python
 total = sum(monthly_expenses)
