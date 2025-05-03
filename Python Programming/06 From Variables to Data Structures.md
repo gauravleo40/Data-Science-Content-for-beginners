@@ -124,3 +124,113 @@ What you really want is:
 
 And that’s exactly what **data structures** in Python allow you to do.
 
+---
+---
+---
+
+# 03. A Better Way to Store Multiple Values — First Step Toward Data Structures
+
+In the last example, you saw how storing monthly expenses using separate variables became time-consuming and hard to manage.
+
+Let’s now try a different style — something that helps us group all those values together in one go.
+
+---
+
+### 🌱 A Smarter Way to Store Multiple Values
+
+If we list all the monthly expense values separated by commas and assign them to a single variable, Python stores them as a **collection** of multiple data points.
+
+Here’s how it looks:
+
+```python
+monthly_expenses = 12000, 15000, 10000, 11000, 13000
+````
+
+This is different from what you’ve done earlier where a variable held just **one** value.
+
+Now, the same variable is holding **five** values at once — like a bundle.
+
+Python recognizes this collection as something called a **tuple** — which is just one kind of *data structure*. Don’t worry about that term for now — just focus on what it allows you to do.
+
+---
+
+### ✅ What Can We Do With This?
+
+This new way of storing data makes many operations simpler and less error-prone.
+
+---
+
+#### ➕ Total Monthly Expense (clean and simple)
+
+```python
+total = sum(monthly_expenses)
+print("Total Expense:", total)
+```
+
+**Output:**
+
+```
+Total Expense: 61000
+```
+
+Compare this with the earlier method, where we had to manually add five different variables. This is clearly more convenient.
+
+---
+
+#### 📊 Average Monthly Expense
+
+```python
+average = sum(monthly_expenses) / 5
+print("Average Monthly Expense:", average)
+```
+
+**Output:**
+
+```
+Average Monthly Expense: 12200.0
+```
+
+You can now do this without repeating all the variable names or rewriting long expressions.
+
+---
+
+#### 🔍 Maximum and Minimum Monthly Expense
+
+```python
+print("Highest Expense in a Month:", max(monthly_expenses))
+print("Lowest Expense in a Month:", min(monthly_expenses))
+```
+
+**Output:**
+
+```
+Highest Expense in a Month: 15000
+Lowest Expense in a Month: 10000
+```
+
+No need to search manually — the structure we used allows Python to help us out.
+
+---
+
+### 💡 What Just Happened?
+
+By storing multiple values as a collection, we’ve gained:
+
+* Cleaner and more manageable code
+* Ability to perform useful operations in one line
+* Less chances of making manual errors
+
+You’ve now seen how Python lets us move **from writing more code** to writing **better code**.
+
+---
+
+### 🎯 A Quick Recap Before We Move Ahead
+
+* **Variables** are still the best tool when we need to store **a single value**.
+* But when we have **multiple related values**, it’s much better to use a **data structure** like the one we just used.
+* What we used here is a **tuple**, and it gave us our first taste of how powerful this new concept can be.
+
+In the next part of your learning journey, we’ll formally explore what **data structures** are, why they matter, and how many different types Python offers to help us store and process data in the real world.
+
+You’ve just taken a mature step toward becoming a thoughtful programmer. Keep going — it gets more interesting from here! 🚀
+
