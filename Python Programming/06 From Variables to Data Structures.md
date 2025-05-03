@@ -43,6 +43,7 @@ N = 12  # That’s it! The rest of the code stays the same.
 > 💡 **Note from a more experienced programmer:** A better way to write this code is by using `for` or `while` loops in Python — something you’ll learn very soon. But even this small example shows how one variable can make your life easier.
 
 ---
+---
 
 
 # 02. Variables have their limits
@@ -126,9 +127,8 @@ And that’s exactly what **data structures** in Python allow you to do.
 
 ---
 ---
----
 
-# 03. A Better Way to Store Multiple Values — First Step Toward Data Structures
+# 03. A better way to store multiple values — First step toward data structures
 
 In the last example, you saw how storing monthly expenses using separate variables became time-consuming and hard to manage.
 
@@ -136,7 +136,7 @@ Let’s now try a different style — something that helps us group all those va
 
 ---
 
-### 🌱 A Smarter Way to Store Multiple Values
+### 🌱 A smarter way to store multiple values
 
 If we list all the monthly expense values separated by commas and assign them to a single variable, Python stores them as a **collection** of multiple data points.
 
@@ -154,7 +154,7 @@ Python recognizes this collection as something called a **tuple** — which is j
 
 ---
 
-### ✅ What Can We Do With This?
+### ✅ What can we do with this?
 
 This new way of storing data makes many operations simpler and less error-prone.
 
@@ -212,19 +212,19 @@ No need to search manually — the structure we used allows Python to help us ou
 
 ---
 
-### 💡 What Just Happened?
+### 💡 What just happened?
 
-By storing multiple values as a collection, we’ve gained:
+By storing multiple values as a collection:
 
-* Cleaner and more manageable code
-* Ability to perform useful operations in one line
-* Less chances of making manual errors
+* We have been able to manage information well - since we are keeping multiple data points together in a data container and calling it by a single name
+* We now have the ability to perform useful operations on these multiple data points by using Pyton's builtin functions : `sum(), max(), min()`. The coding effort has gone down significantly in doing so.
+* Since we are no more writing lengthy expressions involving multiple variables names , the chances of making manual errors has been greatly reduced
 
-You’ve now seen how Python lets us move **from writing more code** to writing **better code**.
+You should be able to clearly see how we have moved **from writing more code** to writing **better code**.
 
 ---
 
-### 🎯 A Quick Recap Before We Move Ahead
+### 🎯 A quick recap
 
 * **Variables** are still the best tool when we need to store **a single value**.
 * But when we have **multiple related values**, it’s much better to use a **data structure** like the one we just used.
