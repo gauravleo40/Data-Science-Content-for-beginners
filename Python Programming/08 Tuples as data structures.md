@@ -177,13 +177,13 @@ print(type(y))  # <class 'tuple'>
 
 ---
 
-## 2. Key properties of tuples
+# 2. Key properties of tuples
 
 Tuples come with a few clear and important features. Let’s walk through each one using simple explanations and relatable examples.
 
 ---
 
-### 2.1 Tuples can store a mix of data types
+## 2.1 Tuples can store a mix of data types
 
 You’re not restricted to storing just numbers or just strings. A tuple can hold a **mixture** of data types.
 
@@ -202,7 +202,7 @@ This might represent a test name, a temperature reading, and whether the sample 
 
 ---
 
-### 2.2 Tuples can store any number of items
+## 2.2 Tuples can store any number of items
 
 Tuples don’t limit how much data you can store. You can start small and grow big.
 
@@ -221,7 +221,7 @@ Whether it's 3 values or 300, Python handles it seamlessly.
 
 ---
 
-### 2.3 Tuples remember the order of items
+## 2.3 Tuples remember the order of items
 
 One of the most useful features is **order**. A tuple remembers the sequence in which you stored the items.
 
@@ -244,15 +244,15 @@ Day: 27
 
 ---
 
-### 2.4 Tuples are immutable (they cannot be changed)
+## 2.4 Tuples are immutable (they cannot be changed)
 
 Once a tuple is defined, it **cannot be altered** — no additions, deletions, or updates.
 
-#### 2.4.1 Everyday analogy
+### 2.4.1 Everyday analogy
 
 Think of a tuple like a **sealed envelope**. Once the items are inside and the envelope is sealed, you can look at what’s inside — but you can’t take anything out or add new things in.
 
-#### 2.4.2 Practical data scenario
+### 2.4.2 Practical data scenario
 
 Imagine storing the Red, Green Blue color values for colors white and black:
 
@@ -283,11 +283,11 @@ Great, I’ve noted your expectations. Let's now work on the updated and detaile
 
 ---
 
-## 3. Accessing tuple items using index values
+# 3. Accessing tuple items using index values
 
 Once a tuple is created, a natural next step is to access the information stored inside it. For this, Python provides a simple yet powerful mechanism known as **indexing**.
 
-### 3.1 What is an index in python?
+## 3.1 What is an index in python?
 
 In Python, an **index** is a numerical label that Python assigns to each item in a sequence-based data structure like a tuple, list, or string.
 These labels help you access specific items in the collection without going through the entire structure.
@@ -311,7 +311,7 @@ Item:  "Let It Be"   "The Beatles"   1970   4.3
 
 If we want to access the band name "The Beatles" (which is the second item), we use the index 1.
 
-### 3.2 How to access items using square brackets `[]`
+## 3.2 How to access items using square brackets `[]`
 
 To access any specific item in a tuple, you use **square brackets** `[]` with the index value of the item you want to retrieve.
 
@@ -319,7 +319,7 @@ This syntax is important — the square brackets are not just a style; they are 
 
 Let’s look at some examples.
 
-#### Example 1: Accessing the first item
+### Example 1: Accessing the first item
 
 ```python
 city_info = ("New Delhi", "India", "Asia")
@@ -334,7 +334,7 @@ New Delhi
 
 Here, `city_info[0]` means “give me the item at index 0”, which is the first item: `"New Delhi"`.
 
-#### Example 2: Accessing the second and third items
+### Example 2: Accessing the second and third items
 
 ```python
 print(city_info[1])  # India
@@ -345,7 +345,7 @@ These operations let us pinpoint any item without scanning the whole tuple manua
 
 ---
 
-### 3.3 Estimating the index based on tuple length
+## 3.3 Estimating the index based on tuple length
 
 If you’re ever unsure about how many items are in the tuple, you can use Python’s `len()` function:
 
@@ -360,7 +360,7 @@ You can now safely access any item using this knowledge.
 
 ---
 
-### 3.4 Accessing the last item in a tuple
+## 3.4 Accessing the last item in a tuple
 
 One common task is to access the **last item** in a tuple. Since the index starts from 0, the last item will always be at index position that is same as: "the length of the Tuple" - 1 :
 
@@ -370,7 +370,7 @@ prices = (105.5, 108.3, 107.6, 110.2)
 last_index_position = len(prices) - 1
 ```
 
-#### Example: Access last item using length
+### Example: Access last item using length
 
 ```python
 print(prices[len(prices)-1])
@@ -388,7 +388,7 @@ This is where Python gives you something smarter — **negative indexing**.
 
 ---
 
-### 3.5 Understanding negative indexing in tuples
+## 3.5 Understanding negative indexing in tuples
 
 Python allows you to use **negative index values** to count from the end of the tuple.
 
@@ -403,7 +403,7 @@ Here’s how it works:
 | 4                | -1 (last item)            |
 
 
-#### Example: Accessing the last item using negative index
+### Example: Accessing the last item using negative index
 
 ```python
 print(prices[-1])  # Last item
@@ -417,7 +417,7 @@ print(prices[-1])  # Last item
 
 Now you don’t have to know or calculate the length. Just use `-1` to get the last item, `-2` to get the second last, and so on.
 
-#### Example: Fetching the last three items
+### Example: Fetching the last three items
 
 ```python
 print(prices[-3])  # 108.3
@@ -428,7 +428,7 @@ You can now conveniently fetch the items at the end of the tuple without worryin
 
 ---
 
-### 3.6 Summary of Indexing
+## 3.6 Summary of Indexing
 
 * Each item in a tuple has a **position**, known as its **index**.
 * You use **square brackets `[]`** with the index to access the item.
@@ -439,7 +439,7 @@ This operation is so fundamental that you will see it being used over and over �
 
 ---
 
-## 4. Slicing Tuples: Working with a Range of Items
+# 4. Slicing Tuples: Working with a Range of Items
 
 Python lets you take out **a portion** of a tuple using a technique called **slicing**.
 
@@ -447,7 +447,7 @@ Think of slicing like cutting a loaf of bread — you’re selecting a few slice
 
 ---
 
-### 4.1 Basic Left-to-Right Slicing
+## 4.1 Basic Left-to-Right Slicing
 
 Syntax: `tuple[start:end]`
 
@@ -466,7 +466,7 @@ print(fruits[1:4])
 
 ---
 
-### 4.2 Slicing Without Start or End
+## 4.2 Slicing Without Start or End
 
 You can leave out the start or end if you want the full range from one side.
 
@@ -484,7 +484,7 @@ print(fruits[2:])  # From index 2 to the end
 
 ---
 
-### 4.3 Slicing with Negative Indexes
+## 4.3 Slicing with Negative Indexes
 
 You can also slice backwards using negative indexes:
 
@@ -502,7 +502,7 @@ It starts from the third-last item and goes up to (but not including) the last.
 
 ---
 
-## 5. Wrapping Up: Why Tuples Matter
+# 5. Wrapping Up: Why Tuples Matter
 
 Tuples might look simple, but they bring a lot of value:
 
