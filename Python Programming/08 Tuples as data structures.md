@@ -454,9 +454,9 @@ Now you want to look at data from the first quarter, second half, or maybe just 
 
 ---
 
-## 4.1 what is slicing?
+## 4.1 What is slicing?
 
-Slicing allows you to **extract a portion of the tuple** by specifying a **start and end index** using a special syntax:
+Slicing is an operation that allows you to **extract a portion of the tuple** by specifying a **start and end index** using a special syntax:
 
 ```python
 tuple_name[start_index : end_index]
@@ -468,7 +468,7 @@ Here’s what this notation means:
 * The `end_index` tells Python **where to stop**, but it does **not include** the item at that position (exclusive).
 * All items **between** these two indices are returned as a **new tuple**.
 
-🟡 **Important Clarifications**:
+🟡 **Important clarifications**:
 
 * This operation does **not change** the original tuple. Instead, it **creates a new tuple** that contains only the selected items.
 * The original tuple stays **exactly the same**. It’s like copying a part of the original Tuple into a new one — the original Tuple doesn’t get overwritten
@@ -548,7 +548,7 @@ As you can see, the output is exactly the same. Python understands that no `star
 
 ---
 
-## 4.3 slicing from the middle
+## 4.3 Slicing from the middle
 
 To get the **second quarter** (April, May, June), you’d start from index 3 and stop before index 6:
 
@@ -558,7 +558,7 @@ print(monthly_sales[3:6])
 🖨️ **Output**
 
 ```
-Output: (5200, 5000, 5100)
+(5200, 5000, 5100)
 ```
 
 Similarly, to get the **third quarter** (July to September):
@@ -569,19 +569,19 @@ print(monthly_sales[6:9])
 
 🖨️ **Output**
 ```
-Output: (5300, 4900, 4700)
+(5300, 4900, 4700)
 ```
-
 
 ---
 
-## 4.4 slicing till the end
+## 4.4 Slicing till the end
 
 If you want the **second half of the year** (July to December), start from index 6 and omit the end:
 
 ```python
 print(monthly_sales[6:])
 ```
+
 🖨️ **Output**
 ```
 (5300, 4900, 4700, 5200, 5600, 5800)
@@ -589,13 +589,12 @@ print(monthly_sales[6:])
 
 ---
 
-## 4.5 slicing the entire tuple
+## 4.5 Slicing the entire tuple
 
 You can use slicing to copy the **entire tuple**:
 
 ```python
 print(monthly_sales[:])
-# Output: (4500, 4800, 4700, 5200, 5000, 5100, 5300, 4900, 4700, 5200, 5600, 5800)
 ```
 
 🖨️ **Output**
@@ -604,72 +603,96 @@ print(monthly_sales[:])
 (4500, 4800, 4700, 5200, 5000, 5100, 5300, 4900, 4700, 5200, 5600, 5800)
 ```
 
-
-
 This is useful when you want to pass a tuple to a new variable or function while preserving the original.
 
 ---
 
-## 4.6 slicing with negative index values
+## 4.6 Slicing with -ive index values
 
-Just like indexing, slicing also supports **negative index values**, allowing you to work from the end.
+Just like indexing, slicing also supports **-ive index values**, allowing you to work from the end.
 
 For example, if you want to get the **last quarter** (October to December):
 
 ```python
 print(monthly_sales[-3:])
-# Output: (5200, 5600, 5800)
 ```
+
+🖨️ **Output**
+```
+(5200, 5600, 5800)
+```
+
 
 To get **all months except the last**:
 
 ```python
 print(monthly_sales[:-1])
-# Output: (4500, 4800, 4700, 5200, 5000, 5100, 5300, 4900, 4700, 5200, 5600)
+```
+
+🖨️ **Output**
+```
+(4500, 4800, 4700, 5200, 5000, 5100, 5300, 4900, 4700, 5200, 5600)
 ```
 
 ---
 
-## 4.7 slicing with omitted bounds
+## 4.7 Slicing with omitted bounds
 
 You can omit both `start` and `end`:
 
 ```python
 print(monthly_sales[:])
-# Output: (4500, 4800, 4700, 5200, 5000, 5100, 5300, 4900, 4700, 5200, 5600, 5800)
 ```
+🖨️ **Output**
+```
+(4500, 4800, 4700, 5200, 5000, 5100, 5300, 4900, 4700, 5200, 5600, 5800)
+```
+
 
 You can also combine positive and negative indexes:
 
 ```python
 # From March to August (index 2 to index -4)
 print(monthly_sales[2:-4])
-# Output: (4700, 5200, 5000, 5100, 5300, 4900)
+```
+
+🖨️ **Output**
+```
+(4700, 5200, 5000, 5100, 5300, 4900)
 ```
 
 This gives you March to August (inclusive of index 2, exclusive of index -4 which is September).
 
 ---
 
-## 4.8 when slicing gives an empty tuple
+## 4.8 When slicing gives an empty tuple
 
 If the `start_index` is equal to the `end_index`, you get an **empty tuple**:
 
 ```python
 print(monthly_sales[4:4])
-# Output: ()
 ```
+
+🖨️ **Output**
+```
+()
+```
+
 
 If the `start_index` is **greater than** the `end_index` (and no direction is specified), it also returns an empty tuple:
 
 ```python
 print(monthly_sales[6:3])
-# Output: ()
 ```
+🖨️ **Output**
+```
+()
+```
+
 
 ---
 
-## 4.9 slicing with a step value (preview)
+## 4.9 Slicing with a step value (preview)
 
 You can optionally add a third value—called a **step**—which tells Python how many positions to jump:
 
@@ -681,7 +704,11 @@ Example: pick every second month in the first half of the year:
 
 ```python
 print(monthly_sales[0:6:2])
-# Output: (4500, 4700, 5000)
+```
+
+🖨️ **Output**
+```
+(4500, 4700, 5000)
 ```
 
 ---
