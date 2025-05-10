@@ -202,7 +202,7 @@ This might represent a test name, a temperature reading, and whether the sample 
 
 ---
 
-### 2.2 Tuples Can Store Any Number of Items
+### 2.2 Tuples can store any number of items
 
 Tuples don’t limit how much data you can store. You can start small and grow big.
 
@@ -221,7 +221,7 @@ Whether it's 3 values or 300, Python handles it seamlessly.
 
 ---
 
-### 2.3 Tuples Remember the Order of Items
+### 2.3 Tuples remember the order of items
 
 One of the most useful features is **order**. A tuple remembers the sequence in which you stored the items.
 
@@ -229,7 +229,7 @@ This is useful when position matters — for instance, a date stored as `(year, 
 
 ```python
 birth_date = (1994, 8, 27)
-print("Year:", birth_date[0])
+print("Year:", birth_date[0])    #----Example of Indexing on a Tuple to access its item at Index 0
 print("Month:", birth_date[1])
 print("Day:", birth_date[2])
 ```
@@ -244,7 +244,44 @@ Day: 27
 
 ---
 
-#### 2.3.1 Indexing in Tuples: Positive and Negative
+### 2.4 Tuples are immutable (they cannot be changed)
+
+Once a tuple is defined, it **cannot be altered** — no additions, deletions, or updates.
+
+#### 2.4.1 Everyday analogy
+
+Think of a tuple like a **sealed envelope**. Once the items are inside and the envelope is sealed, you can look at what’s inside — but you can’t take anything out or add new things in.
+
+#### 2.4.2 Practical data scenario
+
+Imagine storing the Red, Green Blue color values for colors white and black:
+
+```python
+white = (255,255,255)
+black = (0,0,0)
+```
+
+You want these to remain **unchanged** while your program runs. Tuples are perfect for that.
+
+If you try to change the values for a color:
+
+```python
+white[0] = 200
+```
+
+⛔ Python will throw an error:
+
+```
+TypeError: 'tuple' object does not support item assignment
+```
+
+This makes tuples ideal for storing **constant** data.
+
+---
+
+## 3. Accessing individual items in tuples using index
+
+Just because a tuple can’t be changed doesn’t mean it’s not usable! You can easily **access** its items for any operation.
 
 Each item in a tuple can be accessed by its **position**, known as an index.
 
@@ -265,67 +302,6 @@ Power BI
 ```
 
 This flexibility helps you get the exact item you need, whether you're counting from the front or the back.
-
----
-
-### 2.4 Tuples Are Immutable (They Cannot Be Changed)
-
-Once a tuple is defined, it **cannot be altered** — no additions, deletions, or updates.
-
-#### 2.4.1 Everyday Analogy
-
-Think of a tuple like a **sealed envelope**. Once the items are inside and the envelope is sealed, you can look at what’s inside — but you can’t take anything out or add new things in.
-
-#### 2.4.2 Practical Data Scenario
-
-Imagine storing configuration settings for a system:
-
-```python
-config = ("Dark Mode", "English", 100)
-```
-
-You want these to remain **unchanged** while your program runs. Tuples are perfect for that.
-
-If you try to change it:
-
-```python
-config[1] = "Spanish"
-```
-
-⛔ Python will throw an error:
-
-```
-TypeError: 'tuple' object does not support item assignment
-```
-
-This makes tuples ideal for storing **constant** data.
-
----
-
-## 3. Accessing Data Inside Tuples
-
-Just because a tuple can’t be changed doesn’t mean it’s not usable! You can easily **access** its items for any operation.
-
----
-
-### 3.1 Accessing Individual Items Using Index
-
-Let’s look at a simple case:
-
-```python
-device = ("Laptop", "16GB RAM", "512GB SSD")
-print("Device Type:", device[0])
-print("RAM Info:", device[1])
-```
-
-🖨️ **Output:**
-
-```
-Device Type: Laptop
-RAM Info: 16GB RAM
-```
-
-The **index** tells Python which item you want to extract.
 
 ---
 
