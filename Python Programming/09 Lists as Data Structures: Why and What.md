@@ -162,7 +162,7 @@ top_scores = [98, 92, 95]
 print("Few scores:", top_scores)
 
 # Imagine a list generated from a large dataset, easily holding many items
-large_data_list = [i for i in range(1000)] # This creates a list with 1000 numbers
+large_data_list = list(range(1000)) # The `list()` function when applied on a range of numbers creates a list
 print("Length of a large list:", len(large_data_list))
 # print(large_data_list) # Uncomment to see the full list of 1000 numbers
 ```
@@ -386,7 +386,7 @@ As you can see, indexing and slicing work fundamentally the same way for both li
 
 ---
 
-# 4\. Modifying List Values: Updating with Indexing and Slicing
+# 4\. Modifying List values: Updating with indexing and slicing
 
 This section highlights a core difference between lists and tuples: **mutability**. Once a list is created, you can change its elements directly. This is not possible with tuples, which are immutable.
 
