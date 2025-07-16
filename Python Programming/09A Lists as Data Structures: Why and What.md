@@ -249,7 +249,7 @@ This scenario perfectly illustrates why mutability is key. Unlike tuples, lists 
 
 -----
 
-# 3\. Accessing List items: Indexing and Slicing (Similar to Tuples)
+# 3\. Accessing List items: indexing and slicing (similar to Tuples)
 
 Just like tuples, items in a list are stored in a specific order, and you can retrieve individual items or portions of the list based on their position. This is done using **indexing** (for single items) and **slicing** (for multiple items).
 
