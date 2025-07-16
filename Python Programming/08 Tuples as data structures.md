@@ -513,7 +513,7 @@ print(monthly_sales)
 (4500, 4800, 4700, 5200, 5000, 5100, 5300, 4900, 4700, 5200, 5600, 5800)
 ```
 
-The tuple `monthly_sales` remains unchanged. That’s the power—and safety—of slicing.
+The tuple `monthly_sales` remains unchanged. That’s the power and safety of slicing.
 
 ---
 
@@ -690,7 +690,7 @@ print(monthly_sales[6:3])
 
 ## 4.9 Slicing with a step value
 
-You can optionally add a third value—called a **step**—which tells Python how many positions to jump:
+You can optionally add a third value called a **step** which tells Python how many positions to jump:
 
 ```python
 monthly_sales[start : end : step]
@@ -708,11 +708,11 @@ print(monthly_sales[0:6:2])
 ```
 ---
 
-# 5. Wrapping up: When tuples work well—and when they don’t
+# 5. Wrapping up: When tuples work well and when they don’t
 
 Now that you’ve explored how tuples are created, how you can access data within them, and how they behave, let’s take a step back and reflect on the bigger picture.
 
-Tuples are one of Python’s most important data structures, but they’re not always the right tool for the job. Understanding both their **strengths** and **limitations** will help you decide when to use them—and when you might need something more flexible.
+Tuples are one of Python’s most important data structures, but they’re not always the right tool for the job. Understanding both their **strengths** and **limitations** will help you decide when to use them and when you might need something more flexible.
 
 ---
 
@@ -724,7 +724,7 @@ The defining feature of a tuple is that it is **immutable**. Once you define a t
 * Remove existing items
 * Update any of the values
 
-This immutability isn’t just a restriction—it’s actually a **useful feature** in many situations. It helps protect the integrity of your data, ensures that fixed records aren’t accidentally altered, and provides clarity in your code about what is meant to remain unchanged.
+This immutability isn’t just a restriction it’s actually a **useful feature** in many situations. It helps protect the integrity of your data, ensures that fixed records aren’t accidentally altered, and provides clarity in your code about what is meant to remain unchanged.
 
 More examples:
 
@@ -771,7 +771,7 @@ fixed_rate = (7.5,)
 
 Why not just write `fixed_rate = 7.5`?
 
-You certainly can—and in many cases, that’s the better choice.
+You certainly can and in many cases, that’s the better choice.
 
 But tuples, even single-item ones, are useful when:
 
@@ -783,9 +783,9 @@ But tuples, even single-item ones, are useful when:
 
 ## 5.4 Looking ahead: what’s next?
 
-As you’ve now seen, tuples offer **structure, order, and protection**—but they don’t offer flexibility. And flexibility is often what you’ll need in real-world programs.
+As you’ve now seen, tuples offer **structure, order, and protection** but they don’t offer flexibility. And flexibility is often what you’ll need in real-world programs.
 
-That’s why in the next section, you’ll learn about **lists**—a data structure that’s just as intuitive but gives you the ability to:
+That’s why in the next section, you’ll learn about **lists** a data structure that’s just as intuitive but gives you the ability to:
 
 * Grow and shrink your collection
 * Update and modify values
