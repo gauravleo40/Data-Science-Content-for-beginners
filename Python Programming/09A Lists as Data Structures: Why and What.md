@@ -523,7 +523,7 @@ Numbers after insertion: [1, 2, 3, 4, 5, 6]
 
 You've now learned about Python Lists, a incredibly versatile and fundamental data structure. Understanding their properties and how they differ from tuples is key to writing effective and efficient Python code.
 
-## 5.1 What makes Lists special? (Mutability, Flexibility)
+## 5.1 What makes Lists special? (mutability, flexibility)
 
 The most defining characteristic of Lists is their **mutability** combined with their **flexibility**.
 
