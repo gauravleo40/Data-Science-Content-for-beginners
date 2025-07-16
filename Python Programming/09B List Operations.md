@@ -4,7 +4,7 @@
 
 ---
 
-# 1. Understanding List Operations: Beyond Basic Access
+# 1. Understanding List operations: Beyond basic access
 
 By now you've got a solid handle on what Python lists are, how to create them (remember those square brackets `[]`), and their mutable property: .i.e., being changeable! You can even grab specific items using indexing and slicing, and directly update a value if you make a mistake. That's the first step!
 
@@ -20,27 +20,27 @@ In this file, we're going to dive deep into the different kinds of actions and o
 * **Built-in Functions:** Python provides general-purpose functions that work wonderfully with lists.
 * **Keywords & Operators:** Special Python words and symbols that let you perform operations like checking for an item's existence or combining lists.
 
-As you learn about these list operations, always keep the 'why' in mind. Your ultimate goal isn't just to memorize methods, but to solve real-world problems. Think of these list operations as essential tools in your programming toolkit. When faced with a business challenge – say, managing customer orders, updating player scores, or tracking inventory – the problem won't explicitly tell you to `append()` something or `sort()` a list. Instead, you'll need to look at the information you have (often stored in a list!) and then **figure out and choose the right operation** to achieve your desired outcome. That's why practice is so important: try to imagine different scenarios and then ask yourself, "Which list operation can help me here?" This way, you'll learn to apply these tools effectively, becoming a true problem-solver.
+> As you learn about these list operations, always keep the 'why' in mind. Your ultimate goal isn't just to memorize methods, but to solve real-world problems. Think of these list operations as essential tools in your programming toolkit. When faced with a business challenge say, managing customer orders, updating player scores, or tracking inventory the problem won't explicitly tell you to `append()` something or `sort()` a list. Instead, you'll need to look at the information you have (often stored in a list!) and then **figure out and choose the right operation** to achieve your desired outcome. That's why practice is so important: try to imagine different scenarios and then ask yourself, "Which list operation can help me here?" This way, you'll learn to apply these tools effectively, becoming a true problem solver.
 
-## 1.2 Introducing "Methods": Actions for Your Data
+## 1.2 Introducing "Methods": Actions for your data
 
 Let's start with a really important concept: **methods**.
 
 Imagine your Python list is like a smart device, say, your smartphone. It doesn't just hold your apps; it also has specific "buttons" or "features" built right into it. When you want to take a photo, you tap the camera app. When you want to make a call, you tap the phone app.
 
-In Python, a **method** is exactly like one of those specific, built-in features for your data! It's a special action or command that a particular type of data – like a List – knows how to perform on itself. When you want your list to do something specific (like add a new item or remove an old one), you "press its button" by calling one of its methods.
+In Python, a **method** is exactly like one of those specific built-in features for your data! It's a special action or command that a particular type of data like a List knows how to perform on itself. When you want your list to do something specific (like add a new item or remove an old one), you "press its button" by calling one of its methods.
 
-Why do lists have these? Because they're designed for managing collections of items, and these methods provide efficient, pre-written ways to handle common tasks like adding, removing, sorting, and more. You don't have to write the code for *how* to sort a list; you just tell the list to `sort()` itself!
+> Why do lists have these? Because they're designed for managing collections of items, and these methods provide efficient, pre-written ways to handle common tasks like adding, removing, sorting, and more. You don't have to write the code for *how* to sort a list; you just tell the list to `sort()` itself!
 
-And just like your phone has different features than your washing machine, different types of data in Python – whether it's numbers, text (strings), or even other structures you'll learn later – have their *own* unique sets of methods tailored to what they do best. It's all about having the right tool for the job!
+And just like your phone has different features than your washing machine, different types of data type in Python, whether they are numbers (integer, float), text (strings), or even Data Structures (which you'll explore later), have their *own* unique sets of methods tailored to what they do best. It's all about having the right tool for the job!
 
-## 1.3 How to use a Method in Python
+## 1.3 How to use a List method
 
-Using a method is pretty straightforward. You simply write the name of your list variable, then type a **dot (`.`)**, and then the **method's name** followed by **parentheses `()`**.
+Using a List method is pretty straightforward. You simply write the name of your list variable, then type a **dot (`.`)**, and then the **method's name** followed by **parentheses `()`**.
 
 It looks like this: `list_name.method_name(arguments)`
 
-Those parentheses are important! Sometimes they'll be empty if the method doesn't need any extra details to do its job. Other times, you'll put specific information inside them these are called **arguments** to tell the method exactly what to do. For example, if you're using a method to *insert* an item, you need to tell it *which* item to insert and *where* (at what index) to put it!
+Those parentheses are important! Sometimes they'll be empty if the method doesn't need any extra details to do its job. Other times, you'll put specific information inside them, called as **arguments**, which tell the method exactly what to do. For example, if you're using a method to *insert* an item, you need to tell it *which* item to insert and *where* (at what index) to put it!
 
 One crucial thing to always pay attention to: some methods will actually change your original list directly (we call this modifying it "**in-place**"). Others will leave your original list just as it is, and instead give you a brand new list with the changes. We'll make sure to point out this important distinction for each method we discuss!
 
