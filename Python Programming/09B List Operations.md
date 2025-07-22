@@ -1,10 +1,10 @@
-# 🛠️ Mastering List Operations: Python's Built-in Tools
+# 🛠️ Mastering list operations: Python's built-in tools
 
 ### Unlocking the full potential of Python's flexible Lists
 
 ---
 
-# 1. Understanding List operations: Beyond basic access
+# 1. Understanding list operations: Beyond basic access
 
 By now you've got a solid handle on what Python lists are, how to create them (remember those square brackets `[]`), and their mutable property .i.e., being changeable! You can even grab specific items using indexing and slicing, and directly update a value if you make a mistake. That's the first step!
 
@@ -34,7 +34,7 @@ In Python, a **method** is exactly like one of those specific built-in features 
 
 And just like your phone has different features than your washing machine, different types of data type in Python, whether they are numbers (integer, float), text (strings), or even Data Structures (which you'll explore later), have their *own* unique sets of methods tailored to what they do best. It's all about having the right tool for the job!
 
-## 1.3 How to use a List method
+## 1.3 How to use a list method
 
 Using a List method is pretty straightforward. You simply write the name of your list variable, then type a **dot (`.`)**, and then the **method's name** followed by **parentheses `()`**.
 
@@ -46,11 +46,11 @@ One crucial thing to always pay attention to: some methods will actually change 
 
 -----
 
-# 2\. Quick Reference: Essential List Methods
+# 2\. Quick reference: Essential list methods
 
 Before we dive into the details of each list operation, let's get a bird's-eye view. This section provides a quick reference to the most commonly used list methods, built-in functions, and keywords that you'll use regularly. Think of it as your cheat sheet\!
 
-## 2.1 Exploring List methods yourself (`dir()` and `help()`)
+## 2.1 Exploring list methods yourself (`dir()` and `help()`)
 
 Python empowers you to discover things on your own\! You can use two handy built-in functions to explore what a list can do:
 
@@ -83,7 +83,7 @@ append(self, object, /)
     Append object to the end of the list.
 ```
 
-## 2.2 Table: Essential List Methods at a Glance
+## 2.2 Table: Essential list methods at a glance
 
 This table groups the most essential list operations by the kind of task they perform. Look at the examples carefully to see how each one is used and what its typical output is. This will give you a great overview before we explore them in more detail.
 
@@ -107,9 +107,9 @@ This table groups the most essential list operations by the kind of task they pe
 -----
 
 
-# 3\. Detailed Exploration: Methods to 'add items' to Lists
+# 3\. Detailed exploration: Methods to 'add items' to lists
 
-## 3.1 The `append()` Method: Adding to the end
+## 3.1 The `append()` method: Adding to the end
 
 Lists are dynamic, meaning they can grow. The `append()` method is the simplest way to add new items. It adds a single item to the very end of your list. The list is modified *in-place*.
 
@@ -156,7 +156,7 @@ Type of the last item: <class 'list'>
 
 Notice how `["carrots", "onions"]` became a single item at the end, making the outer list now contain a list as one of its elements.
 
-## 3.2 The `insert()` Method: Adding at a specific position
+## 3.2 The `insert()` method: Adding at a specific position
 
 While `append()` adds to the end, `insert()` gives you control over *where* in the list the new item goes. You specify the `index` where you want to insert the item, and the item that was originally at that index (and all subsequent items) will shift to the right to make space. The list is modified *in-place*.
 
@@ -270,11 +270,11 @@ List after extend: [1, 2, 3, 4]
 
 -----
 
-# 4\. Detailed Exploration: Methods to remove items from Lists
+# 4\. Detailed exploration: Methods to remove items from Lists
 
 Just as you can add items to lists, you can also remove them. Python provides several methods and one keyword for this purpose, each suited for slightly different situations: removing by value, removing by index, or clearing the entire list.
 
-## 4.1 The `remove()` Method: Removing by value
+## 4.1 The `remove()` method: Removing by value
 
 The `remove()` method helps you delete the *first occurrence* of a specific item by its *value*. If the item appears multiple times in the list, only the first one encountered will be removed. This method modifies the list *in-place*.
 
@@ -318,7 +318,7 @@ Current list: ['apple', 'banana', 'cherry']
 ValueError: list.remove(x): x not in list
 ```
 
-## 4.2 The `pop()` Method: Removing by index (and getting the item)
+## 4.2 The `pop()` method: Removing by index (and getting the item)
 
 The `pop()` method is unique because it not only removes an item from the list but also **returns** the removed item. This is incredibly useful when you need to use the item you're taking out of the list. It modifies the list *in-place*.
 
@@ -377,7 +377,7 @@ Agenda remaining: ['Morning Meeting', 'Team Lunch', 'Project Review']
 ```
 Note : If you try to pop an invalid index, you will get an IndexError.
 
-## 4.3 The `clear()` Method: Removing all items
+## 4.3 The `clear()` method: Removing all items
 
 The `clear()` method is the quickest way to remove all items from a list, making it empty. It modifies the list *in-place*.
 
@@ -444,11 +444,11 @@ Items after deleting slice [1:4]: ['a', 'e', 'f']
 
 -----
 
-# 5\. Detailed Exploration: Methods to inspect and organize Lists
+# 5\. Detailed exploration: Methods to inspect and organize lists
 
 Beyond adding and removing, lists provide methods to check for the presence of items, find their positions, count occurrences, and even reorder the entire collection.
 
-## 5.1 Checking for Presence: The `in` keyword
+## 5.1 Checking for presence: The `in` keyword
 
 The `in` keyword is not a method, but a very common and readable way to check if a specific item exists within a list. It returns `True` if the item is found, and `False` otherwise. This is useful for avoiding errors (like `ValueError` with `remove()` or `index()`) and for conditional logic.
 
@@ -475,7 +475,7 @@ Laptop found in inventory.
 Printer is not in inventory.
 ```
 
-## 5.2 Finding Items: The `index()` and `count()` Methods
+## 5.2 Finding items: The `index()` and `count()` methods
 
 These methods help you get information *about* the items in your list without changing the list itself.
 
@@ -532,16 +532,13 @@ Similar to `remove()`, if the item is not found in the list (or within the speci
 
 ```python
 my_items = ['pen', 'paper']
-try:
-    my_items.index('eraser')
-except ValueError as e:
-    print(f"Error: {e}")
+my_items.index('eraser')
 ```
 
 🖨️ **Output:**
 
 ```
-Error: 'eraser' is not in list
+ValueError: 'eraser' is not in list
 ```
 
 ### `count()`: Counting item occurrences
@@ -569,7 +566,7 @@ The number '5' appears 3 times.
 The number '9' appears 0 times.
 ```
 
-## 5.3 Sorting Lists: The `sort()` Method and `sorted()` Function
+## 5.3 Sorting lists: The `sort()` method and `sorted()` function
 
 Sorting is a common operation. Python offers two main ways to sort lists: one that modifies the list directly and one that returns a new sorted list.
 
@@ -602,11 +599,9 @@ Original alphabets: ['c', 'a', 'b']
 Alphabets after in-place sort (descending): ['c', 'b', 'a']
 ```
 
-  * **Custom sorting (brief mention for advanced):** For more complex sorting rules (e.g., sorting a list of words by their length), `sort()` and `sorted()` can accept a `key` argument. This is an advanced topic often covered when discussing functions and lambda expressions.
-
 ### `sorted()`: Creating a new sorted list
 
-The `sorted()` function is a **built-in Python function** (not a list method). It takes an iterable (like a list, tuple, or string) as input and returns a *new list* containing all items from the input in sorted order. Crucially, the original list remains unchanged.
+The `sorted()` function is a built-in feature in Python (not something specific to lists). You can use it with any iterable like a list, tuple, or even a string, and it returns a new list with the items sorted. The original data stays just the way it was, it doesn't get changed.
 
 ```python
 original_data = [5, 1, 9, 3, 7]
@@ -615,7 +610,6 @@ print("Original data:", original_data)
 # Get a new sorted list
 new_sorted_data = sorted(original_data)
 print("New sorted data:", new_sorted_data)
-print("Original data (unchanged):", original_data) # Original list is not modified
 
 # You can also sort in reverse with sorted()
 reverse_sorted_data = sorted(original_data, reverse=True)
@@ -627,7 +621,6 @@ print("New reverse-sorted data:", reverse_sorted_data)
 ```
 Original data: [5, 1, 9, 3, 7]
 New sorted data: [1, 3, 5, 7, 9]
-Original data (unchanged): [5, 1, 9, 3, 7]
 New reverse-sorted data: [9, 7, 5, 3, 1]
 ```
 
@@ -636,7 +629,7 @@ New reverse-sorted data: [9, 7, 5, 3, 1]
   * Use `sort()` when you want to **modify the original list** and don't need a copy of the unsorted version. It's often more memory-efficient as it doesn't create a new list.
   * Use `sorted()` when you need a **new sorted list** and want to keep the original list intact.
 
-## 5.4 Reversing Lists: The `reverse()` Method and Slicing
+## 5.4 Reversing lists: The `reverse()` method and slicing
 
 Reversing changes the order of items in a list so the last item becomes first, the second-to-last becomes second, and so on.
 
@@ -684,7 +677,7 @@ Original sequence (unchanged): [10, 20, 30, 40, 50]
 
 -----
 
-# 6\. Wrapping Up: Mastering List Operations
+# 6\. Wrapping up: Mastering list operations
 
 You've now explored a wide array of powerful methods and techniques for manipulating Python lists. From adding and removing items to sorting, counting, and understanding how to effectively use them, you have a strong foundation in managing dynamic collections of data.
 
