@@ -88,8 +88,6 @@ append(self, object, /)
 This table groups the most essential list operations by the kind of task they perform. Look at the examples carefully to see how each one is used and what its typical output is. This will give you a great overview before we explore them in more detail.
 
 
-Here is the complete table from Section 2.2, with the fourth column removed, as you requested:
-
 | Category       | Method Name                         | Description in Simple Words                                                                |
 | :------------- | :---------------------------------- | :----------------------------------------------------------------------------------------- |
 | **Adding** | `append()`                          | Adds a single item to the end of the list. Modifies in-place.                              |
