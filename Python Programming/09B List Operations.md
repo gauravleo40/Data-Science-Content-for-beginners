@@ -107,7 +107,7 @@ This table groups the most essential list operations by the kind of task they pe
 -----
 
 
-# 3\. Detailed Exploration: Adding Items to Lists
+# 3\. Detailed Exploration: Methods to 'add items' to Lists
 
 ## 3.1 The `append()` Method: Adding to the end
 
@@ -270,7 +270,7 @@ List after extend: [1, 2, 3, 4]
 
 -----
 
-# 4\. Detailed Exploration: Removing Items from Lists
+# 4\. Detailed Exploration: Methods to remove items from Lists
 
 Just as you can add items to lists, you can also remove them. Python provides several methods and one keyword for this purpose, each suited for slightly different situations: removing by value, removing by index, or clearing the entire list.
 
@@ -299,7 +299,7 @@ Original colors: ['red', 'green', 'blue', 'green', 'yellow']
 Colors after removing 'green': ['red', 'blue', 'green', 'yellow']
 ```
 
-### Handling non-existent values (`ValueError`)
+### Removing non-existent values (`ValueError`)
 
 If you try to remove a value that is not present in the list, Python will raise a `ValueError`. It's a good practice to check if an item exists using the `in` keyword (which we'll cover later) before attempting to remove it, especially in more complex programs.
 
@@ -307,18 +307,15 @@ If you try to remove a value that is not present in the list, Python will raise 
 my_list = ['apple', 'banana', 'cherry']
 print("Current list:", my_list)
 
-try:
-    my_list.remove('grape') # 'grape' is not in the list
-    print("List after attempt to remove 'grape':", my_list)
-except ValueError as e:
-    print(f"Error: {e}")
+my_list.remove('grape') # 'grape' is not in the list
 ```
 
 🖨️ **Output:**
 
 ```
 Current list: ['apple', 'banana', 'cherry']
-Error: list.remove(x): x not in list
+
+ValueError: list.remove(x): x not in list
 ```
 
 ## 4.2 The `pop()` Method: Removing by index (and getting the item)
@@ -368,12 +365,6 @@ print("Original agenda:", agenda)
 removed_item = agenda.pop(1)
 print(f"Removed from agenda: '{removed_item}'")
 print("Agenda remaining:", agenda)
-
-# If you try to pop an invalid index, you will get an IndexError.
-try:
-    agenda.pop(100)
-except IndexError as e:
-    print(f"Error trying to pop invalid index: {e}")
 ```
 
 🖨️ **Output:**
@@ -382,8 +373,9 @@ except IndexError as e:
 Original agenda: ['Morning Meeting', 'Client Call', 'Team Lunch', 'Project Review']
 Removed from agenda: 'Client Call'
 Agenda remaining: ['Morning Meeting', 'Team Lunch', 'Project Review']
-Error trying to pop invalid index: pop index out of range
+
 ```
+Note : If you try to pop an invalid index, you will get an IndexError.
 
 ## 4.3 The `clear()` Method: Removing all items
 
@@ -406,7 +398,7 @@ Temporary files: ['report.pdf', 'image.jpg', 'data.csv']
 Temporary files after clearing: []
 ```
 
-## 4.4 The `del` keyword: Removing by index/slice (no return value)
+## 4.4 The `del` keyword: Removing by index/slice (no value is returned)
 
 The `del` keyword is a general-purpose Python statement used to delete objects. When used with lists, it allows you to remove items by their index or by a slice, similar to how you would access them. Unlike `pop()`, `del` does *not* return the removed item(s). It modifies the list *in-place*.
 
@@ -452,13 +444,15 @@ Items after deleting slice [1:4]: ['a', 'e', 'f']
 
 -----
 
-# 5\. Detailed Exploration: Inspecting and Organizing Lists
+# 5\. Detailed Exploration: Methods to inspect and organize Lists
 
 Beyond adding and removing, lists provide methods to check for the presence of items, find their positions, count occurrences, and even reorder the entire collection.
 
 ## 5.1 Checking for Presence: The `in` keyword
 
 The `in` keyword is not a method, but a very common and readable way to check if a specific item exists within a list. It returns `True` if the item is found, and `False` otherwise. This is useful for avoiding errors (like `ValueError` with `remove()` or `index()`) and for conditional logic.
+
+You can also use `not in` to check if an item is not present in the list. This comes in handy when you want to perform an action only if a certain item is missing.
 
 ```python
 inventory = ["laptop", "mouse", "keyboard", "monitor"]
