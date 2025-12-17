@@ -80,3 +80,16 @@ The encoder’s role is not to compress images efficiently. Its role is to infer
 Once you internalize this animal-image story, the technical terms stop floating in abstraction. “Sampling” becomes controlled variation within a plausible explanation. “Uncertainty” becomes acknowledgment that no single image defines a class. “KL divergence” becomes the rule that prevents every class from inventing its own private universe. And “continuity” becomes the natural consequence of training the decoder on nearby latent values again and again.
 
 At that point, a VAE no longer feels like a probabilistic version of an autoencoder. It feels like the first model that takes the generative question seriously: what must the hidden causes of these images look like for generation to actually work?
+
+
+
+---
+
+
+
+
+
+
+
+---
+
